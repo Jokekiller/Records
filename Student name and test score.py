@@ -13,11 +13,9 @@ for count in range(4):
     name.score = int(input("Enter the score the student got: "))
     names.append(name)
 
-#names = []
-#for count in range(4):
-#    names.append(studentMarks())
-
 print("|Student Name|Score|")
+print("-"*20)
 for name in names:
-    print("{0:^6}{1:^8}".format(name.studentName, name.score))
-    
+    print("|{0:^12}|{1:^5}|".format(name.studentName, name.score))
+    print("-"*20)
+
